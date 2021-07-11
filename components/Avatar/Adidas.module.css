@@ -1,0 +1,54 @@
+.adidas {
+  position: absolute;
+  top: 18rem;
+  right: 1.4rem;
+  height: 20px;
+  width: 34.33px;
+}
+
+.stripes {
+  z-index: 10;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: #fafafa;
+  background-color: transparent;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.stripe {
+  height: 100%;
+  width: 22%;
+  background: #c0c0c0;
+  -webkit-transform: rotate(329deg);
+  -moz-transform: rotate(329deg);
+  -o-transform: rotate(329deg);
+  writing-mode: lr-tb;
+  position: absolute;
+}
+
+.stripeSm {
+  top: 71.67%;
+  left: 17.475%;
+}
+
+.stripeMd {
+  top: 37.5%;
+  left: 39.8%;
+}
+
+.stripeLg {
+  top: 15%;
+  left: 62.62%;
+}
+
+.adidasText {
+  z-index: 8;
+  position: absolute;
+  font-size: 9.5px;
+  bottom: -10px;
+  left: 1.8px;
+  letter-spacing: 0.3px;
+  color: #fafafa;
+}
