@@ -1,8 +1,8 @@
 import Head from "next/head";
 import Slide from "@material-ui/core/Slide";
 import styles from "../styles/Home.module.css";
-import AvatarHead from "../components/Avatar/Head";
-
+import Avatar from "../components/Avatar/Head";
+import HomeContent from "../components/Content/HomeContent";
 export default function Home() {
   return (
     <Slide in={true} appear={true} direction="down" timeout={600}>
@@ -14,7 +14,8 @@ export default function Home() {
             content="Kevin Blair's web development portfolio"
           />
         </Head>
-        <AvatarHead />
+        <Avatar />
+        <HomeContent />
       </div>
     </Slide>
   );

@@ -1,10 +1,10 @@
 .mouth {
   z-index: 5;
   position: absolute;
-  top: 11.6rem;
-  left: calc(50% - 2.45rem);
-  width: 4.9rem;
-  height: 1.6rem;
+  top: 8.7rem;
+  left: calc(50% - 1.8375rem);
+  width: 3.675rem;
+  height: 1.2rem;
   background-color: white;
   border-left: 1px solid rgba(227, 93, 106, 0.4);
   border-right: 1px solid rgba(227, 93, 106, 0.4);
@@ -13,7 +13,7 @@
 .lip {
   z-index: 5;
   position: absolute;
-  width: 4.9rem;
+  width: 3.675rem;
   background: #eec1ad;
   left: -1px;
 }

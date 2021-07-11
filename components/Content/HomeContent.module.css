@@ -1,0 +1,15 @@
+.container {
+  display: flex;
+  width: 100vw;
+  justify-content: center;
+}
+
+.textContainer {
+  width: 80vh;
+  display: flex;
+  justify-content: space-between;
+}
+
+.textColumn {
+  width: 48%;
+}
