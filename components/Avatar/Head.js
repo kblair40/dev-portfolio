@@ -1,7 +1,7 @@
 import React from "react";
 
 import classes from "./Head.module.css";
-import Backdrop from "./Background/Backdrop";
+import AvatarBackdrop from "../Layout/AvatarBackdrop";
 import Eyes from "./Eyes";
 import Nose from "./Nose";
 import Hair from "./Hair";
@@ -12,7 +12,7 @@ import Body from "./Body";
 
 const Head = () => {
   return (
-    <Backdrop>
+    <AvatarBackdrop>
       <div className={classes.head}>
         <div className={classes.hairContainer}>
           <Hair />
@@ -36,7 +36,7 @@ const Head = () => {
           <Body />
         </div>
       </div>
-    </Backdrop>
+    </AvatarBackdrop>
   );
 };
 
