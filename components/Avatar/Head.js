@@ -1,7 +1,7 @@
 import React from "react";
 
 import classes from "./Head.module.css";
-import AvatarBackdrop from "../Layout/AvatarBackdrop";
+import AvatarBackdrop from "./AvatarBackdrop";
 import Eyes from "./Eyes";
 import Nose from "./Nose";
 import Hair from "./Hair";

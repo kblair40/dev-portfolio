@@ -1,11 +1,14 @@
 import "../styles/globals.css";
-import Layout from "../components/Layout/Layout";
+// import Layout from "../components/Layout/Layout";
+import { ThemeProvider } from "../store/ThemeContext";
 
 function MyApp({ Component, pageProps }) {
   return (
-    <Layout>
+    <ThemeProvider>
+      {/* <Layout> */}
       <Component {...pageProps} />
-    </Layout>
+      {/* </Layout> */}
+    </ThemeProvider>
   );
 }
 

@@ -1,0 +1,17 @@
+.container {
+  width: 100vw;
+  /* height: 3rem; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+  background-color: transparent;
+}
+
+.modeSwitch {
+  margin-top: 0.5rem;
+}
+
+.socialLinks {
+  margin-top: 0.5rem;
+}

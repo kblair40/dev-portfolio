@@ -1,13 +1,15 @@
 .backdropContainer {
   width: 100vw;
+  height: 100vh;
   display: flex;
   justify-content: center;
 }
 
 .circle {
-  margin-top: 2rem;
+  margin-top: 4rem;
   height: 18.75rem;
   width: 18.75rem;
+  min-width: 18.75rem;
   border-radius: 50%;
   background: transparent;
   display: flex;

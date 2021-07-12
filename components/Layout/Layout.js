@@ -1,11 +1,12 @@
 import classes from "./Layout.module.css";
 import { Fragment } from "react";
 
-import SocialLinksContainer from "../SocialLinks/SocialLinksContainer";
+// import Navbar from "./Navbar/Navbar";
+
 const Layout = (props) => {
   return (
     <Fragment>
-      <SocialLinksContainer />
+      {/* <Navbar /> */}
       <main className={classes.main}>{props.children}</main>
     </Fragment>
   );
