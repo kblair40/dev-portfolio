@@ -1,0 +1,32 @@
+.container {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  transform: translateZ(0px);
+}
+
+.speedDial {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  /* border: 1px solid green; */
+}
+
+.fab {
+  background: white !important;
+}
+
+.iconRoot {
+  height: 100% !important;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon {
+  color: #0c0c0d;
+  font-size: 50px !important;
+}

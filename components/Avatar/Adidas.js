@@ -11,7 +11,6 @@ const Adidas = () => {
         <div className={classNames(classes.stripe, classes.stripeMd)}></div>
         <div className={classNames(classes.stripe, classes.stripeSm)}></div>
       </div>
-      <div className={classes.adidasText}>adidas</div>
     </div>
   );
 };
