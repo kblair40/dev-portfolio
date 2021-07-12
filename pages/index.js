@@ -19,9 +19,7 @@ export default function Home() {
           </Head>
           <div className={classes.myName}>Kevin Blair</div>
           <Avatar />
-          {/* <div className={classes.homeContent}> */}
           <HomeContent />
-          {/* </div> */}
           <MenuDial />
         </div>
       </div>

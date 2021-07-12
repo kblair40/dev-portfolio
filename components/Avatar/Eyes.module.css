@@ -2,7 +2,8 @@
   z-index: 5;
   position: absolute;
   height: 1.05rem;
-  width: 1.75rem;
+  /* width: 1.75rem; */
+  width: 2.05rem;
   border-radius: 50%;
   background: white;
   display: flex;
@@ -10,14 +11,16 @@
   align-items: center;
 }
 .leftEye {
-  left: 1.875rem;
+  /* left: 1.875rem; */
+  left: 2.025rem;
 }
 .rightEye {
-  right: 1.875rem;
+  /* right: 1.875rem; */
+  right: 2.025rem;
 }
 
 .iris {
-  height: 0.9rem;
+  height: 0.95rem;
   width: 0.975rem;
   border-radius: 50%;
   background: #7fb4be;
@@ -57,12 +60,12 @@
   border-radius: 50% 50% 0 0;
 }
 .leftEyebrow {
-  left: 1.8rem;
-  transform: rotate(-3deg);
+  left: 1.95rem;
+  transform: rotate(-2deg);
 }
 .rightEyebrow {
-  right: 1.8rem;
-  transform: rotate(3deg);
+  right: 1.95rem;
+  transform: rotate(2deg);
 }
 
 .eyebrowRounded {

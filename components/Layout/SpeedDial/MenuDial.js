@@ -3,19 +3,23 @@ import Backdrop from "@material-ui/core/Backdrop";
 import SpeedDial from "@material-ui/lab/SpeedDial";
 import SpeedDialIcon from "@material-ui/lab/SpeedDialIcon";
 import SpeedDialAction from "@material-ui/lab/SpeedDialAction";
-import FileCopyIcon from "@material-ui/icons/FileCopyOutlined";
-import SaveIcon from "@material-ui/icons/Save";
+import ResumeIcon from "@material-ui/icons/Description";
+// import EmailIcon from "@material-ui/icons/Email";
+import GitHubIcon from "@material-ui/icons/GitHub";
+import LinkedInIcon from "@material-ui/icons/LinkedIn";
+import RingVolumeIcon from "@material-ui/icons/RingVolume";
 import PrintIcon from "@material-ui/icons/Print";
 import ShareIcon from "@material-ui/icons/Share";
 import FavoriteIcon from "@material-ui/icons/Favorite";
+
 import classes from "./MenuDial.module.css";
 
 const actions = [
-  { icon: <FileCopyIcon />, name: "Resume" },
-  { icon: <SaveIcon />, name: "Save" },
-  { icon: <PrintIcon />, name: "Print" },
-  { icon: <ShareIcon />, name: "Share" },
-  { icon: <FavoriteIcon />, name: "Like" },
+  { icon: <ResumeIcon fontSize="large" />, name: "Resume" },
+  //   Change phone icon to email icon if changing functionality to open email
+  { icon: <RingVolumeIcon fontSize="large" />, name: "Contact" },
+  { icon: <GitHubIcon fontSize="large" />, name: "Github" },
+  { icon: <LinkedInIcon fontSize="large" />, name: "LinkedIn" },
 ];
 
 const MenuDial = () => {
@@ -37,20 +41,30 @@ const MenuDial = () => {
         classes={{ root: classes.speedDial, fab: classes.fab }}
         icon={
           <SpeedDialIcon
-            classes={{ root: classes.iconRoot, icon: classes.icon }}
+            classes={{
+              root: classes.speedDialIconRoot,
+              icon: classes.speedDialIcon,
+              iconOpen: classes.speedDialOpen,
+            }}
           />
         }
         onClose={handleClose}
         onOpen={handleOpen}
         open={open}
         direction="down"
+        // open
       >
         {actions.map((action) => (
           <SpeedDialAction
             tooltipOpen
+            classes={{
+              root: classes.actionRoot,
+              staticTooltipLabel: classes.tooltip,
+              fab: classes.actionFab,
+            }}
             key={action.name}
             icon={action.icon}
-            tooltipTitle={action.name}
+            tooltipTitle={<p className={classes.tooltipTitle}>{action.name}</p>}
             onClick={handleClose}
           />
         ))}
