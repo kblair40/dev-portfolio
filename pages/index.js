@@ -1,9 +1,11 @@
 import Head from "next/head";
 import Slide from "@material-ui/core/Slide";
+
 import classes from "../styles/Home.module.css";
 import Avatar from "../components/Avatar/Head";
 import HomeContent from "../components/Content/HomeContent";
 import MenuDial from "../components/Layout/SpeedDial/MenuDial";
+import DownArrow from "../components/UI/DownArrow";
 
 export default function Home() {
   return (
@@ -21,6 +23,7 @@ export default function Home() {
           <Avatar />
           <HomeContent />
           <MenuDial />
+          <DownArrow />
         </div>
       </div>
     </Slide>
